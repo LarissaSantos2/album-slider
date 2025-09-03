@@ -15,9 +15,7 @@ O slider contém:
 
 ## 👀 Como Visualizar  
 1. Clone o repositório ou baixe os arquivos.  
-2. Abra o arquivo `index.html` em qualquer navegador.  
-
-Ou acesse diretamente pelo link:  
+2. Acesse diretamente pelo link em qualquer navegador:  
 
 ```bash
-https://SEU-USUARIO.github.io/album-slider/
+https://larissasantos2.github.io/album-slider/
