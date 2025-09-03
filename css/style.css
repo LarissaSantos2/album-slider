@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+   background: linear-gradient(#1a1a1a, #393939);
+  font-family:'Poppins',sans-serif;
+}
+
+.slider-container{
+  width:90%;
+  max-width:1200px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.slider-images{
+  display:flex;
+  align-items:flex-end;
+  gap:16px;
+  justify-content:center;
+  position:relative;
+}
+
+.slider-img{
+  width:160px;
+  height:240px;
+  border-radius:6px;
+  cursor:pointer;
+  overflow:hidden;
+  position:relative;
+  transition:all 0.5s ease;
+}
+
+.slider-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+/* Detalhes */
+.details{
+  display:none;
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  color:#fff;
+}
+
+.details h2 {
+  font-size:20px;
+  font-weight:600;
+}
+
+.details p{
+  font-size:16px;
+  font-weight:500;
+}
+
+/* Inputs invisíveis */
+.slider-container input{display:none;}
+
+/* Botões de controle */
+.slider-controls{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+}
+
+.slider-controls label{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:gray;
+  margin:0 5px;
+  cursor:pointer;
+  transition:background 0.3s;
+}
+
+.slider-controls label:hover{background:white;}
+
+/* Slide ativo */
+#slide1:checked ~ .slider-images #s1,
+#slide2:checked ~ .slider-images #s2,
+#slide3:checked ~ .slider-images #s3,
+#slide4:checked ~ .slider-images #s4,
+#slide5:checked ~ .slider-images #s5,
+#slide6:checked ~ .slider-images #s6,
+#slide7:checked ~ .slider-images #s7{
+  width:360px;
+  height:300px;
+}
+
+/* Mostrar detalhes apenas no ativo */
+#slide1:checked ~ .slider-images #s1 .details,
+#slide2:checked ~ .slider-images #s2 .details,
+#slide3:checked ~ .slider-images #s3 .details,
+#slide4:checked ~ .slider-images #s4 .details,
+#slide5:checked ~ .slider-images #s5 .details,
+#slide6:checked ~ .slider-images #s6 .details,
+#slide7:checked ~ .slider-images #s7 .details{
+  display:block;
+}
+
+/* Bolinha quando estiver ativa */
+#slide1:checked ~ .slider-controls label[for="slide1"],
+#slide2:checked ~ .slider-controls label[for="slide2"],
+#slide3:checked ~ .slider-controls label[for="slide3"],
+#slide4:checked ~ .slider-controls label[for="slide4"],
+#slide5:checked ~ .slider-controls label[for="slide5"],
+#slide6:checked ~ .slider-controls label[for="slide6"],
+#slide7:checked ~ .slider-controls label[for="slide7"]{
+  background:#ffffff;
+}

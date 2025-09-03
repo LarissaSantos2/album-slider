@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slider de Álbuns</title>
+    <meta
+      name="description"
+      content="Slider musical interativo com álbuns de cantores. Projeto simples e visualmente atrativo para destacar músicas e artistas em um carrossel dinâmico."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Slider Musical, Galeria de Albuns, Cantores, Música, Carrossel Interativo"
+    />
+    <meta name="author" content="Larissa de Oliveira Santos" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="shortcut icon" href="img/icone-slider.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <!-- Inputs invisíveis -->
+      <input type="radio" name="slider" id="slide1" />
+      <input type="radio" name="slider" id="slide2" />
+      <input type="radio" name="slider" id="slide3" />
+      <input type="radio" name="slider" id="slide4" checked />
+      <!-- ICARUS ativo no meio -->
+      <input type="radio" name="slider" id="slide5" />
+      <input type="radio" name="slider" id="slide6" />
+      <input type="radio" name="slider" id="slide7" />
+
+      <!-- Slides -->
+      <div class="slider-images">
+        <!-- Álbum Tim Bernardes -->
+        <div class="slider-img" id="s1">
+          <img src="img/tim-bernardes.jpg" />
+          <div class="details">
+            <h2>Tim Bernardes</h2>
+            <p>Mil Coisas Invisíveis</p>
+          </div>
+        </div>
+        <!-- Álbum OPROPRIO -->
+        <div class="slider-img" id="s2">
+          <img src="img/oproprio.jpg" />
+          <div class="details">
+            <h2>Yago Oproprio</h2>
+            <p>OPROPRIO</p>
+          </div>
+        </div>
+        <!-- Álbum 2ZDinizz -->
+        <div class="slider-img" id="s3">
+          <img src="img/2zdinizz.jpg" />
+          <div class="details">
+            <h2>2ZDinizz</h2>
+            <p>PATRONO</p>
+          </div>
+        </div>
+        <!-- Álbum BK -->
+        <div class="slider-img" id="s4">
+          <img src="img/icarus.jpg" />
+          <div class="details">
+            <h2>BK</h2>
+            <p>ICARUS</p>
+          </div>
+        </div>
+        <!-- Álbum Djonga -->
+        <div class="slider-img" id="s5">
+          <img src="img/djonga.jpg" />
+          <div class="details">
+            <h2>Djonga</h2>
+            <p>O MENINO QUE QUERIA SER DEUS</p>
+          </div>
+        </div>
+        <!-- Álbum BK  -->
+        <div class="slider-img" id="s6">
+          <img src="img/dlre.jpg" />
+          <div class="details">
+            <h2>BK</h2>
+            <p>Diamantes, Lágrimas e Rostos</p>
+          </div>
+        </div>
+        <!-- Álbum Sain -->
+        <div class="slider-img" id="s7">
+          <img src="img/slow-flow.jpg" />
+          <div class="details">
+            <h2>Sain</h2>
+            <p>Slow Flow</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <div class="slider-controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
+        <label for="slide6"></label>
+        <label for="slide7"></label>
+      </div>
+    </section>
+  </body>
+</html>
